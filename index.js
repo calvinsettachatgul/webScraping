@@ -91,8 +91,6 @@ rp(options)
 
 // now go back to selecting those elements again
 
-<<<<<<< HEAD
-=======
 var options = {
     uri: carURL,
     transform: function (body) {
@@ -107,7 +105,7 @@ rp(options)
 
   // array of all the cars
   var cars = $('p.row');
-  
+
   for (var i = 0; i < cars.length; i++){
     var titleOfThisCar = cheerio(cars[i]).find('a.hdrlnk').text();
     console.log("TITLE: ", titleOfThisCar);
